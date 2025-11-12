@@ -58,11 +58,6 @@ std::string askTemperatureAndShowIt(int choice){
         result = (temperatureValue - fahOffset) * fahToCel ;
         return std::to_string(temperatureValue)+" F = "+std::to_string(result)+" C";
         break;
-    
-    case 3:
-        std::cout << "Exiting the program";
-        return "";
-        break;
     }
 }
 
