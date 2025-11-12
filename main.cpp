@@ -19,7 +19,13 @@ int main(){
 
     choice = askChoice(messageChoice);
     
-    while (choice < 1 || choice > 3){
+    if (choice == 3){
+        std::cout << "Exiting the program\n";
+        return 0;
+    }
+    
+
+    while (choice < 1 || choice > 2){
         choice = askChoice(messageChoice);
     }
     std::cout << askTemperatureAndShowIt(choice) << std::endl;
